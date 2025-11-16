@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  background: white;
+  color: #111;
+}
+
+#topbar {
+  background: linear-gradient(-90deg, #2e1074, #165e15);
+  color: white;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #fff;
+}
+
+#topbar-logo img {
+  position: absolute;
+  width: 140px;
+  z-index: 10;
+  transform: rotate(-15deg) translate(0, -30px);
+  padding-bottom: 200px;
+}
+
+#discord-icon {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+}
+
+#discord-icon path {
+  stroke: black;
+  /* Outline color */
+  stroke-width: 2.5px;
+  /* Outline thickness */
+  stroke-linejoin: round;
+  /* Optional: Style for corners */
+  paint-order: stroke;
+  /* Optional: Ensures stroke is painted behind fill */
+}
+
+#topbar nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: #000000 1px 0 10px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px black;
+}
+
+#topbar nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#topbar nav a:hover {
+  color: #7fff6a;
+}
+
+#hero {
+  min-height: 100vh;
+  background-image: url("../src/image/gg-back.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#hero-logo {
+  height: 400px;
+  background: rgba(255, 255, 255, 0);
+  margin: 0 auto 40px auto;
+  display: flex;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../src/image/GatorGamesFull.png");
+}
+
+#hero h1 {
+  font-size: 84px;
+  font-weight: 900;
+  color: white;
+}
+
+#hero-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: #000000 1px 0 10px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px black;
+}
+
+#hero-desc {
+  font-size: 24px;
+  color: white;
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+}
+
+#featured {
+  padding: 100px 40px;
+  background: linear-gradient(#233b23, #2a1c4d);
+  color: white;
+  text-align: center;
+}
+
+#featured h2 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+#featured-card {
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4ade80, #059669, #9333ea);
+}
+
+#featured-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #111;
+  background-image: url("./image/fractured.png");
+  background-size: cover;
+  transform: scale(1.1);
+  background-repeat: no-repeat;
+}
+
+#featured-body {
+  padding: 60px;
+  background: #111827;
+}
+
+#featured-body h3 {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 800;
+  height: 175px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./image/ff-cropped.png");
+}
+
+#featured-body button {
+  font-size: 30px;
+  max-width: 700px;
+  margin: 10px auto 0 auto;
+  border-radius: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #58a176;
+  color: #fff;
+  transition: 0.2s;
+}
+
+#featured-body button:hover {
+  background-color: #478360;
+  transition: 0.2s;
+}
+
+#featured-body p {
+  font-size: 20px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 10px auto 0 auto;
+}
+
+#stats {
+  background-color: #000000;
+  color: #fff;
+  padding: 100px 40px;
+}
+
+#stats h2 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.stats-line {
+  width: 200px;
+  height: 8px;
+  background: linear-gradient(to right, #4ade80, #8b5cf6);
+  margin: 20px auto 60px auto;
+  border-radius: 10px;
+}
+
+#stats-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.stat {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat:hover {
+  transform: scale(1.08);
+}
+
+.stat-value {
+  font-size: 54px;
+  font-weight: 900;
+}
+
+.stat-label {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #66cf9b;
+}
+
+/*# sourceMappingURL=styles.css.map */
