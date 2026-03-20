@@ -8,20 +8,21 @@ body {
 #topbar {
   background: linear-gradient(-90deg, #2e1074, #165e15);
   color: white;
-  padding: 30px 60px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #fff;
+  flex-wrap: wrap;
 }
 
 #topbar-logo img {
   position: absolute;
-  width: 140px;
+  width: 120px;
   z-index: 10;
-  transform: rotate(-15deg) translate(0, -30px);
+  transform: rotate(-15deg) translate(30px, -20px);
   padding-bottom: 200px;
 }
 
@@ -31,24 +32,22 @@ body {
 
 #discord-icon path {
   stroke: black;
-  /* Outline color */
   stroke-width: 2.5px;
-  /* Outline thickness */
   stroke-linejoin: round;
-  /* Optional: Style for corners */
   paint-order: stroke;
-  /* Optional: Ensures stroke is painted behind fill */
 }
 
 #topbar nav {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   text-shadow: #000000 1px 0 10px;
   font-weight: 800;
   -webkit-text-stroke: 1px black;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 #topbar nav a {
@@ -65,17 +64,18 @@ body {
   min-height: 100vh;
   background-image: url("../src/image/gg-back.png");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+  padding: 20px;
 }
 
 #hero-logo {
-  height: 400px;
-  background: rgba(255, 255, 255, 0);
-  margin: 0 auto 40px auto;
+  height: 220px;
+  margin: 0 auto 20px auto;
   display: flex;
   background-position: center center;
   background-size: contain;
@@ -84,13 +84,13 @@ body {
 }
 
 #hero h1 {
-  font-size: 84px;
+  font-size: 48px;
   font-weight: 900;
   color: white;
 }
 
 #hero-subtitle {
-  font-size: 36px;
+  font-size: 22px;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -100,29 +100,29 @@ body {
 }
 
 #hero-desc {
-  font-size: 24px;
+  font-size: 16px;
   color: white;
-  max-width: 700px;
+  max-width: 90%;
   margin: 20px auto 0 auto;
 }
 
 #featured {
-  padding: 100px 40px;
+  padding: 60px 20px;
   background: linear-gradient(#233b23, #2a1c4d);
   color: white;
   text-align: center;
 }
 
 #featured h2 {
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 900;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 #featured-card {
-  max-width: 1100px;
+  max-width: 100%;
   margin: auto;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
   background: linear-gradient(135deg, #4ade80, #059669, #9333ea);
 }
@@ -133,21 +133,21 @@ body {
   background: #111;
   background-image: url("./image/fractured.png");
   background-size: cover;
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-repeat: no-repeat;
 }
 
 #featured-body {
-  padding: 60px;
+  padding: 30px 20px;
   background: #111827;
 }
 
 #featured-body h3 {
-  font-size: 36px;
+  font-size: 24px;
   color: rgba(0, 0, 0, 0);
   text-transform: uppercase;
   font-weight: 800;
-  height: 175px;
+  height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -155,11 +155,11 @@ body {
 }
 
 #featured-body button {
-  font-size: 30px;
-  max-width: 700px;
-  margin: 10px auto 0 auto;
+  font-size: 20px;
+  max-width: 100%;
+  margin: 20px auto 0 auto;
   border-radius: 10px;
-  width: 200px;
+  width: 160px;
   text-transform: uppercase;
   border-width: 2px;
   border-style: solid;
@@ -175,29 +175,29 @@ body {
 }
 
 #featured-body p {
-  font-size: 20px;
+  font-size: 16px;
   opacity: 0.9;
-  max-width: 700px;
+  max-width: 100%;
   margin: 10px auto 0 auto;
 }
 
 #stats {
   background-color: #000000;
   color: #fff;
-  padding: 100px 40px;
+  padding: 60px 20px;
 }
 
 #stats h2 {
-  font-size: 60px;
+  font-size: 36px;
   text-align: center;
   font-weight: 900;
 }
 
 .stats-line {
-  width: 200px;
-  height: 8px;
+  width: 120px;
+  height: 6px;
   background: linear-gradient(to right, #4ade80, #8b5cf6);
-  margin: 20px auto 60px auto;
+  margin: 20px auto 40px auto;
   border-radius: 10px;
 }
 
@@ -205,8 +205,8 @@ body {
   max-width: 1100px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .stat {
@@ -215,18 +215,72 @@ body {
 }
 
 .stat:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .stat-value {
-  font-size: 54px;
+  font-size: 36px;
   font-weight: 900;
 }
 
 .stat-label {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 10px;
   color: #66cf9b;
 }
 
+@media (min-width: 768px) {
+  #topbar {
+    padding: 30px 60px;
+  }
+  #topbar-logo img {
+    transform: rotate(-15deg) translate(5px, -20px);
+  }
+  #topbar nav {
+    font-size: 18px;
+    gap: 40px;
+  }
+  #hero-logo {
+    height: 400px;
+  }
+  #hero h1 {
+    font-size: 84px;
+  }
+  #hero-subtitle {
+    font-size: 36px;
+  }
+  #hero-desc {
+    font-size: 24px;
+    max-width: 700px;
+  }
+  #featured {
+    padding: 100px 40px;
+  }
+  #featured h2 {
+    font-size: 60px;
+  }
+  #featured-body {
+    padding: 60px;
+  }
+  #featured-body h3 {
+    height: 175px;
+    font-size: 36px;
+  }
+  #stats {
+    padding: 100px 40px;
+  }
+  #stats h2 {
+    font-size: 60px;
+  }
+  #stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .stat-value {
+    font-size: 54px;
+  }
+  .stat-label {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
